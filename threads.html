@@ -3,23 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackadamia Threads</title>
+    <title>Hackadamia Forum</title>
     <link href="" rel="stylesheet">  <!-- ADD CSS STYLE LINK HERE -->
 </head>
 
 <body>
-
-    <!-- ADD HEADER, SEARCH AND NAV BAR -->
-    <header>
-        <nav></nav>
+    <div class="logo">
+        <img src="assets/logosmall.png" alt="Hackadamia Logo" width="200" height="200">
+    </div>
+    <header class="header">
+        <!-- MAIN NAVIGATION BAR FOR PAGES -->
+        <nav class="nav-bar">
+        <a href="threads.html">HOME</a>
+        <a href="userpage.html">USER</a>
+        </nav>
+        <!-- SEARCH BAR CAN BE INSIDE THE NAVIGATION BAR OR IN A DIV TO STYLE IT INDIVIDUALY -->
+        <div class="search-bar">
+        <input type="text" placeholder="Search..">
+        </div> 
+        <div class="title">
+        <h1>HACKADAMIA</h1>
+        <p>Hacks for everyday</p>
+    </div>
     </header>
-        <div>
-    <!-- ADD THREADS PAGE CONTENT -->
-        </div>
-        <div>        
-    <!-- ADD USER BUTTON -->
-        </div>
+   
 
+    <!-- NAVIGATION TO OTHER TOPICS -->
+    <nav class="nav-bar">
+        <i>&#9758;</i>
+        <a href="topics.html">CAR</a>
+        <i>&#9758;</i>
+        <a href="topics.html">COOKING</a>
+        <i>&#9758;</i>
+        <a href="topics.html">HOME</a>
+        <i>&#9758;</i>
+        <a href="topics.html">FINANCE</a>
+        </nav>
+        
+    <div class="all-colum">
+        <h3>ALL TOPICS</h3>
+    </div>
+
+    <!-- THREADS PAGE CONTENT EXAMPLE POST -->
+    <div class="container">
+     <div class="subforum">
+        <div class="subform-row">
+        <div class="subforum-description">
+            <h1>CHANGE A TIRE</h1>
+            <p>Change a tire like the pros!</p>
+        </div>
+        <div class="subforum-stats">
+            <span>1 Posts | 15 Topics</span>
+        </div>
+        <div class="subforum-info">
+            <b><a href="">Last Post</a></b>by<a href="">USER</a>
+            <br>
+            on <small>13 Nov 2024</small>
+        </div>
+        </div>
+    </div>
+</div>
+
+  <!-- MORE POSTS...I WILL ADD MORE HTML CONTENT TO MAKE MORE POSTS AFTER CSS STYLE HAS BEEN APPLIED-->
+  <div class="container">
+    <div class="subforum">
+        <div class="subform-row">
+        <div class="subforum-description">
+            <h1>COOK GRILLED CHICKEN</h1>
+            <p>Chicken on the grill? You got it!</p>
+        </div>
+        <div class="subforum-stats">
+            <span>1 Posts | 5 Topics</span>
+        </div>
+        <div class="subforum-info">
+            <b><a href="">Last Post</a></b>by<a href="">USER</a>
+            <br>
+            on <small>13 Nov 2024</small>
+        </div>
+        </div>
+    </div>
+</div>
     <!-- ADD SCRIPT TAG FOR JACASCRIPT -->     
 </body>
 </html>
