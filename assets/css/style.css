@@ -10,6 +10,13 @@
     }
   }
 
+  .header-topics {
+    margin: 0 0 50px 50px;
+    background-color: rgb(48, 47, 47);
+    padding: 10px 0 10px 20px;
+    width: 200px;
+  }
+
   .logo {
     display: flex;
     flex-direction: column;
@@ -45,4 +52,13 @@
 a:hover {
   color: white;
   background-color: dodgerblue;
+}
+
+p {
+  border: solid 5px rgb(74, 61, 255);
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(48, 47, 47);
+
 }
