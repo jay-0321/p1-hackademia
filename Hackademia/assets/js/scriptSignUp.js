@@ -65,10 +65,10 @@ let userRegisted = [
 
 
 function checkUser(userName) {
-  // Comprobar si el nombre de usuario ya existe en el arreglo de usuarios registrados
+ 
   for (let users of userRegisted) {
       if (users.user == userName) {
-          return true; // El usuario ya está registrado
+          return true; 
       }
   }
   return false; 
@@ -80,14 +80,15 @@ function addUser() {
   console.log(`intenta registrar. ${userInput1.value.trim()}`);
 
   if (checkUser(userInput1.value.trim())) {
-      
+      console.log('username already registed.');
       response =
-  'Username is not available choose ';
+  'Username is not available, please Choose another.';
       submissionResponseE2.textContent = response;
   } else {
       // Agregar el nuevo usuario al arreglo de registrados
       userRegisted.push({ user: userInput1.value.trim(), email: EmailInput1.value.trim(), password: passwordInput1.value.trim()});
-
+   
+      console.log(userRegisted);
       location.href ="threads.html";
 
   }
@@ -95,10 +96,10 @@ function addUser() {
 
 
 // Add listener to submit element
-submitEl.addEventListener('click', showResponse);
+//submitEl.addEventListener('click', showResponse);
 
 // Add listener to submit element
-//submitE2.addEventListener('click', addUser);
+submitE2.addEventListener('click', addUser);
 
 
 // Ejemplo de uso:

@@ -1,5 +1,6 @@
 body {
-  background-color: #eff5f8
+  
+  background-color: rgba(140, 168, 228, 0.342);
 }
 
 button {
@@ -26,7 +27,7 @@ input {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 60vw;
-    background-color: #f0ead6;
+    background: linear-gradient(rgb(148, 212, 231), rgb(224, 250, 111));
   }
 
 .card-contents {
@@ -36,8 +37,8 @@ input {
 #name,
 #email,
 #user,
-#password,
-#submit {
+#password
+ {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 20px;
