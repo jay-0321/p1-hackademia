@@ -3,18 +3,15 @@ const submitE2 = document.querySelector('#signUp');
 const userInput = document.querySelector('#user');
 const passwordInput = document.querySelector('#password');
 const submissionResponseEl = document.querySelector('#response');
+const submissionResponseE2 = document.querySelector('#responsesignUp');
 
 //user new
 const userInput1 = document.querySelector('#user');
 const EmailInput1 = document.querySelector('#email');
 const passwordInput1 = document.querySelector('#password');
 
-const userInput3 = userInput1.value.trim();//userInput1.value.trim()
-const EmailInput3 = EmailInput1.value.trim();
 
 
-console.log(userInput3);
-console.log(`intenta registrar.----- ${userInput1.value.trim()}------`);
 
 //user registed
 const users ='abrahan';
@@ -56,17 +53,17 @@ submissionResponseEl.textContent = response;
 
 
 // Arreglo de usuarios registrados (esto podría ser una base de datos en un caso real)
-let usuariosRegistrados = [
-  { nombreUsuario: 'juan123', correo: 'juan@example.com' },
-  { nombreUsuario: 'maria456', correo: 'maria@example.com' },
-  { nombreUsuario: 'pedro789', correo: 'pedro@example.com' }
+let userRegisted = [
+  { user: 'juan123', email: 'juan@example.com', password: '123456' },
+  { user: 'maria456', email: 'maria@example.com', password: '123456' },
+  { user: 'pedro789', email: 'pedro@example.com', password: '123456' }
 ];
 
 // Función que valida si el usuario ya está registrado
-function validarUsuario(nombreUsuario) {
+function checkUser(userName) {
   // Comprobar si el nombre de usuario ya existe en el arreglo de usuarios registrados
-  for (let usuario of usuariosRegistrados) {
-      if (usuario.nombreUsuario === nombreUsuario) {
+  for (let users of userRegisted) {
+      if (users.user == userName) {
           return true; // El usuario ya está registrado
       }
   }
@@ -74,16 +71,20 @@ function validarUsuario(nombreUsuario) {
 }
 
 // Función que maneja la lógica de registro
-function registrarUsuario(userInput3, EmailInput3) {
+function addUser() {
   event.preventDefault();
   console.log(`intenta registrar. ${userInput1.value.trim()}`);
-  if (validarUsuario(userInput3)) {
+
+  if (checkUser(userInput1.value.trim())) {
       console.log('El nombre de usuario ya está registrado. Por favor, elige otro.');
+      response =
+  'Username is not available';
+      submissionResponseE2.textContent = response;
   } else {
       // Agregar el nuevo usuario al arreglo de registrados
-      usuariosRegistrados.push({ nombreUsuario: userInput3, correo: EmailInput3 });
+      userRegisted.push({ user: userInput1.value.trim(), email: EmailInput1.value.trim(), password: passwordInput1.value.trim()});
       console.log('Usuario registrado exitosamente');
-      console.log(usuariosRegistrados);
+      console.log(userRegisted);
 
   }
 }
@@ -93,7 +94,7 @@ function registrarUsuario(userInput3, EmailInput3) {
 //submitEl.addEventListener('click', showResponse);
 
 // Add listener to submit element
-submitE2.addEventListener('click', registrarUsuario);
+submitE2.addEventListener('click', addUser);
 
 
 // Ejemplo de uso:
