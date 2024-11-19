@@ -9,9 +9,9 @@ const submissionResponseEl = document.querySelector('#response');
 
 // array to test
 let userRegisted = [
-  { user: 'juan123', email: 'juan@example.com', password: '123456' },
-  { user: 'maria456', email: 'maria@example.com', password: '123456' },
-  { user: 'pedro789', email: 'pedro@example.com', password: '123456' }
+  { user: 'danielle', email: 'dani@example.com', password: '123456' },
+  { user: 'abrahan', email: 'abrahan@example.com', password: '123456' },
+  { user: 'kevin', email: 'kevin@example.com', password: '123456' }
 ];
 
 
@@ -36,7 +36,7 @@ for (let users of userRegisted) {
   userInput.value +    
   '.';
 
-  location.href ="threads.html";
+  location.href ="threadsdw.html";
   }
 }
 
@@ -50,37 +50,6 @@ response =
 
 }
 
-
-
-
-function checkUser(userName) {
-  // Comprobar si el nombre de usuario ya existe en el arreglo de usuarios registrados
-  for (let users of userRegisted) {
-      if (users.user == userName) {
-          return true; // El usuario ya está registrado
-      }
-  }
-  return false; 
-}
-
-
-function addUser() {
-  event.preventDefault();
-  console.log(`intenta registrar. ${userInput1.value.trim()}`);
-
-  if (checkUser(userInput1.value.trim())) {
-      
-      response =
-  'Username is not available choose ';
-      submissionResponseE2.textContent = response;
-  } else {
-      // Agregar el nuevo usuario al arreglo de registrados
-      userRegisted.push({ user: userInput1.value.trim(), email: EmailInput1.value.trim(), password: passwordInput1.value.trim()});
-
-      location.href ="threads.html";
-
-  }
-}
 
 
 // Add listener to submit element
