@@ -47,6 +47,7 @@ function addUser() {
       userRegisted.push({ user: userInput1.value.trim(), email: EmailInput1.value.trim(), password: passwordInput1.value.trim()});
    
       console.log(userRegisted);
+      localStorage.setItem('userLog', userInput1.value.trim());
       location.href ="threadsdw.html";
 
   }

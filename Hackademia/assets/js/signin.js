@@ -25,27 +25,23 @@ function showResponse(event) {
 
 
 let response='';
-
+let userfound=false;
 
 for (let users of userRegisted) {
   if (users.user == userInput.value.trim() && users.password == passwordInput.value.trim()) {
     
-    console.log('log in success');
-  response =
-  'Thank you Sign In Success ' +
-  userInput.value +    
-  '.';
-
+    userfound=true;
+  localStorage.setItem('userLog', userInput.value.trim());
   location.href ="threadsdw.html";
   }
 }
-
+if(!userfound){
 response =
   'Incorrect username or password.  ';
 
 
   submissionResponseEl.textContent = response;
-
+}
 
 
 }
