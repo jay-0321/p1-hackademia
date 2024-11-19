@@ -6,9 +6,9 @@ const submissionResponseEl = document.querySelector('#response');
 
 // array to test
 let userRegisted = [
-  { user: 'juan123', email: 'juan@example.com', password: '12345' },
-  { user: 'maria456', email: 'maria@example.com', password: '123456' },
-  { user: 'pedro789', email: 'pedro@example.com', password: '1234567' }
+  { user: 'danielle', email: 'dani@example.com', password: '123456' },
+  { user: 'abrahan', email: 'abrahan@example.com', password: '123456' },
+  { user: 'kevin', email: 'kevin@example.com', password: '123456' }
 ];
 
 
