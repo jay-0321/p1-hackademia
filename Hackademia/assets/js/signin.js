@@ -7,7 +7,6 @@ const submissionResponseEl = document.querySelector('#response');
 
 
 
-
 // array to test
 let userRegisted = [
   { user: 'danielle', email: 'dani@example.com', password: '123456' },
@@ -15,9 +14,6 @@ let userRegisted = [
   { user: 'kevin', email: 'kevin@example.com', password: '123456' }
 ];
 
-
-const users ='abrahan';
-const passwords = '123456';
 
 
 
@@ -35,21 +31,10 @@ for (let users of userRegisted) {
   if (users.user == userInput.value.trim() && users.password == passwordInput.value.trim()) {
     
     console.log('log in success');
-
-  //check values in
-console.log(userInput.value.trim());
-console.log(passwordInput.value.trim());
-
-let response='';
-if(userInput.value.trim()==users && passwordInput.value.trim() == passwords){
-
-  console.log('log in success');
-
   response =
   'Thank you Sign In Success ' +
   userInput.value +    
   '.';
-
 
   location.href ="threadsdw.html";
   }
@@ -66,21 +51,6 @@ response =
 }
 
 
-
-// Add listener to submit element
-submitEl.addEventListener('click', showResponse);
-
-
-
-}else{
-  response =
-  'Incorrect username or password. ';
-}
-submissionResponseEl.textContent = response;
-  //console.log(event.type);
-  //console.log(event.target);
-
-}
 
 // Add listener to submit element
 submitEl.addEventListener('click', showResponse);
