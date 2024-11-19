@@ -13,9 +13,7 @@ const passwordInput1 = document.querySelector('#password');
 
 
 
-//user registed
-const users ='abrahan';
-const passwords = '123456';
+
 
 
 
