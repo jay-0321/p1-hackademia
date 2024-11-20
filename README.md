@@ -13,3 +13,5 @@ To use Hackademia you need to sign up with a username, email and password. Retur
 
 Hackademia is created by TEAM 8:
 Samira Silva, Danielle W., Abrahan Gonzalez, Kevin Tovar, Jalany Hernandez
+
+Deployed page: https://devsevenseven.github.io/p1-hackademia/Hackademia/sign_up.html
